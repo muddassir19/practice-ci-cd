@@ -3,9 +3,6 @@ pipeline {
     tools {
         maven 'maven3'
     }
-    options {
-
-    }
     parameters {
         choice choices: ['develop', 'qa', 'master'], description: 'choose the branch to build' name: 'branchName'
     }
